@@ -22,4 +22,4 @@ För att starta lokal miljö
 npm run dev
 ```
 
-2024 &copy; **SENFLR**
+**2024 &copy; SENFLR**
