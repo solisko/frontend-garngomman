@@ -24,7 +24,7 @@ function App() {
     <>
       <Header />
       {/* <Start /> */}
-      <Stash/>
+      <Stash title1="Stash" title2="Garn" title3="Nålar" title4="Tillbehör"/>
     </>
   );
 }
