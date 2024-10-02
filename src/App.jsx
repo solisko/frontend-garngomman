@@ -1,6 +1,7 @@
 import "./App.css";
 import { Header } from "@solisko/components-garngomman";
-import { Start } from "@solisko/components-garngomman";
+// import { Start } from "@solisko/components-garngomman";
+import { Stash } from "@solisko/components-garngomman";
 
 function App() {
   // const FetchFromBackEnd = async () => {
@@ -22,7 +23,8 @@ function App() {
   return (
     <>
       <Header />
-      <Start />
+      {/* <Start /> */}
+      <Stash/>
     </>
   );
 }
