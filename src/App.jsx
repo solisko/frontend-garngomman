@@ -1,7 +1,6 @@
 import "./App.css";
 import { Header } from "@solisko/components-garngomman";
-// import { Start } from "@solisko/components-garngomman";
-import { Stash } from "@solisko/components-garngomman";
+import Switch from "./routes/Switch";
 
 function App() {
   // const FetchFromBackEnd = async () => {
@@ -18,13 +17,12 @@ function App() {
   //   }
   // };
 
-  // FetchFromBackEnd();
+  // FetchFromBackEnd()
 
   return (
     <>
       <Header />
-      {/* <Start /> */}
-      <Stash title1="Stash" title2="Garn" title3="Nålar" title4="Tillbehör"/>
+      <Switch />
     </>
   );
 }
