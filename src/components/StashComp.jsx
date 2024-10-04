@@ -5,7 +5,7 @@ const StashComp = () => {
   return (
     <div className={styles.stashContainer}>
       <Stash
-        className={styles.stashTab}
+        btnClassName={styles.stashTab}
         title1="Stash"
         title2="Garn"
         title3="Nålar"
