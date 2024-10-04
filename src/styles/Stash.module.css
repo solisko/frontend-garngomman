@@ -1,0 +1,9 @@
+.stashContainer{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.stashTab {
+    background-color: blueviolet;
+}

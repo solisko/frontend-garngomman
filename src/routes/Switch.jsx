@@ -1,5 +1,6 @@
-import { Start, Stash } from "@solisko/components-garngomman";
+import { Start, Stash, Community, } from "@solisko/components-garngomman";
 import { Routes, Route } from "react-router";
+import StashComp from "../components/StashComp";
 
 const Switch = () => {
   return (
@@ -8,21 +9,17 @@ const Switch = () => {
         <Route path="/" element={<Start />} />
         <Route path="/login" />
         <Route path="/registration" />
-        <Route
-          path="/stash"
-          element={
-            <Stash
-              title1="Stash"
-              title2="Garn"
-              title3="Nålar"
-              title4="Tillbehör"
-            />
-          }
-        />
+        <Route path="/stash" element={<StashComp />} />
         <Route path="/profile" />
+        <Route path="/profile/gdpr" />
+        <Route path="/profile/accountsettings" />
+        <Route path="/profile/membership" />
+        <Route path="/profile/personsettings" />
+        <Route path="/profile/preferences" />
+        <Route path="/profile/support" />
         <Route path="/addtostah" />
         <Route path="/project" />
-        <Route path="/community" />
+        <Route path="/community" element={<Community />} />
         <Route path="/inspo" />
       </Routes>
     </div>
