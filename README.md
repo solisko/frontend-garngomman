@@ -15,8 +15,12 @@ Använd git bash eller liknande verktyg
 2. cd frontend-garngomman
 3. npm i
 ```
+Fungerar inte appen som du vill? Pröva att köra:
+```
+npm i @solisko/components-garngomman@latest
+```
 
-För att starta lokal miljö
+För att starta lokal miljö:
 
 ```
 npm run dev

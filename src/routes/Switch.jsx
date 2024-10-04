@@ -1,4 +1,5 @@
-import { Start } from "@solisko/components-garngomman";
+import { Start, Stash, Community } from "@solisko/components-garngomman";
+
 import { Routes, Route } from "react-router";
 import StashComp from "../components/StashComp";
 
@@ -13,7 +14,7 @@ const Switch = () => {
         <Route path="/profile" />
         <Route path="/addtostah" />
         <Route path="/project" />
-        <Route path="/community" />
+        <Route path="/community" element={<Community />} />
         <Route path="/inspo" />
       </Routes>
     </div>
