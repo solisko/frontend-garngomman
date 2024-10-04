@@ -11,6 +11,12 @@ const Switch = () => {
         <Route path="/registration" />
         <Route path="/stash" element={<StashComp />} />
         <Route path="/profile" />
+        <Route path="/profile/gdpr" />
+        <Route path="/profile/accountsettings" />
+        <Route path="/profile/membership" />
+        <Route path="/profile/personsettings" />
+        <Route path="/profile/preferences" />
+        <Route path="/profile/support" />
         <Route path="/addtostah" />
         <Route path="/project" />
         <Route path="/community" element={<Community />} />
