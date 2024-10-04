@@ -1,4 +1,4 @@
-import { Start, Stash, Community, } from "@solisko/components-garngomman";
+import { Start, Stash, Community } from "@solisko/components-garngomman";
 import { Routes, Route } from "react-router";
 import StashComp from "../components/StashComp";
 
