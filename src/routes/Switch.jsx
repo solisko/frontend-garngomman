@@ -17,7 +17,7 @@ const Switch = () => {
         <Route path="/profile/personsettings" />
         <Route path="/profile/preferences" />
         <Route path="/profile/support" />
-        <Route path="/addtostah" />
+        <Route path="/addtostash" />
         <Route path="/project" />
         <Route path="/community" element={<Community />} />
         <Route path="/inspo" />
