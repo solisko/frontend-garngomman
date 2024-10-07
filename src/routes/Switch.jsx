@@ -1,5 +1,6 @@
 import {
   Start,
+  Login,
   Community,
   Profil,
   Gdpr,
@@ -17,7 +18,7 @@ const Switch = () => {
     <div>
       <Routes>
         <Route path="/" element={<Start />} />
-        <Route path="/login" /> 
+        <Route path="/login" element={<Login />} /> 
         <Route path="/registration" />
         <Route path="/stash" element={<StashComp />} />
         <Route path="/Profile" element={<Profil />} />
