@@ -4,6 +4,10 @@
     justify-content: center; */
 }
 
+.stash{
+    background-color: aqua;
+}
+
 .stashTab {
     background-color: blueviolet;
 }
