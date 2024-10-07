@@ -25,9 +25,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           diff-search: true
-
-      - name: Install dependencies
-        run: npm install
           
       - name: discord
         uses: sebastianpopp/discord-action@releases/v2
