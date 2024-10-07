@@ -2,6 +2,7 @@ import "./App.css";
 import { Header } from "@solisko/components-garngomman";
 import Switch from "./routes/Switch";
 import NavbarComp from "./components/NavbarComp";
+import styles from "./styles/General.module.css";
 
 function App() {
   // const FetchFromBackEnd = async () => {
@@ -20,14 +21,14 @@ function App() {
 
   // FetchFromBackEnd()
 
-
-
   return (
-    <>
+    <div className={styles.mainContainer}>
       <Header />
-      <Switch />
+      <div className={styles.contentContainer}>
+        <Switch />
+      </div>
       <NavbarComp />
-    </>
+    </div>
   );
 }
 
