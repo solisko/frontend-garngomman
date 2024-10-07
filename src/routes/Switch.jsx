@@ -1,6 +1,7 @@
 import {
   Start,
   EmailLoginPage,
+  EmailPasswordPage,
   Community,
   Profil,
   Gdpr,
@@ -19,7 +20,7 @@ const Switch = () => {
       <Routes>
         <Route path="/" element={<Start />} />
         <Route path="/login" element={<EmailLoginPage />} />
-        <Route path="/registration" />
+        <Route path="/password" element={<EmailPasswordPage />}/>
         <Route path="/stash" element={<StashComp />} />
         <Route path="/Profile" element={<Profil />} />
         <Route path="/profile/gdpr" element={<Gdpr />} />
