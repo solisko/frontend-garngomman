@@ -25,10 +25,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           diff-search: true
-          
-      - name: discord
-        uses: sebastianpopp/discord-action@releases/v2
-        with: 
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: ${{ github.actor }} has successfylly .
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Update component package
+        run: npm update @solisko/components-garngomman
+
 
