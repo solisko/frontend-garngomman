@@ -1,19 +1,22 @@
 import { Navbar } from "@solisko/components-garngomman";
+import { useNavigate } from "react-router";
 
 const NavbarComp = () => {
+  const navigate = useNavigate();
+
   const handleNavClick = (button) => {
     switch (button) {
       case "Mina Projekt":
-        alert("Mina Projekt clicked!");
+        navigate("/project");
         break;
-      case "Inspo":
-        alert("Inspo clicked!");
+        case "Mönster":
+        navigate("/patterns");
         break;
       case "Community":
-        alert("Community clicked!");
+        navigate("/community");
         break;
       case "Min Profil":
-        alert("Min Profil clicked!");
+        navigate("/profile");
         break;
       default:
         alert(`${button} clicked!`);
@@ -21,7 +24,9 @@ const NavbarComp = () => {
   };
 
   return (
-    <div>
+    <div 
+      // style={{position: "fixed", bottom: "0"}}
+    >
       <Navbar handleClick={handleNavClick} />
     </div>
   );

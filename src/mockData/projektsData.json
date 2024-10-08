@@ -1,0 +1,17 @@
+[
+  {
+    "projektIid": 1,
+    "name": "Jultröja",
+    "description": "Röd och grön jultröja i ull"
+  },
+  {
+    "projektIid": 2,
+    "name": "Kudde",
+    "description": "Kudde av en stor mormorsruta"
+  },
+  {
+    "projektIid": 2,
+    "name": "Linne",
+    "description": "Tunnt sommarlinne"
+  }
+]
