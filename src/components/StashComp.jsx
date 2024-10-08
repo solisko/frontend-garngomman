@@ -1,17 +1,26 @@
-import { Stash, StashList } from "@solisko/components-garngomman";
+import {
+  Stash,
+  StashList,
+  YarnList,
+  NeedleList,
+  AccesoryList,
+} from "@solisko/components-garngomman";
 import styles from "../styles/Stash.module.css";
 import yarnData from "../mockData/yarnData.json";
 import needleData from "../mockData/needleData.json";
 import accesoryData from "../mockData/accesoryData.json";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { GarnContext } from "../context/GarnProvider";
 
 const StashComp = () => {
   const { categorySetter, category } = useContext(GarnContext);
-
   const [renderedList, setRenderedList] = useState(null);
-
   const stashList = [...yarnData, ...needleData, ...accesoryData];
+
+  const handleTabClick = (category) => {
+    categorySetter(category);
+    renderList(category);
+  };
 
   const renderList = (category) => {
     switch (category) {
@@ -19,13 +28,13 @@ const StashComp = () => {
         setRenderedList(<StashList />);
         break;
       case "Garn":
-        setRenderedList(<Pear />);
+        setRenderedList(<YarnList />);
         break;
       case "Nålar":
-        setRenderedList(<Banana />);
+        setRenderedList(<NeedleList />);
         break;
       case "Tillbehör":
-        setRenderedList(<Banana />);
+        setRenderedList(<AccesoryList />);
         break;
       default:
         setRenderedList(null);
@@ -41,8 +50,10 @@ const StashComp = () => {
         title2="Garn"
         title3="Nålar"
         title4="Tillbehör"
+        handleClick={handleTabClick}
       />
-      <StashList stasList={stashList} />
+      <div>{renderedList}</div>
+      {/* <StashList stasList={stashList} /> */}
     </div>
   );
 };

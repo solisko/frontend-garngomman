@@ -3,12 +3,12 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { GarnContext } from "./context/GarnProvider.jsx";
+import GarnProvider from "./context/GarnProvider";
 
 createRoot(document.getElementById("root")).render(
-  <GarnContext>
+  <GarnProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </GarnContext>
+  </GarnProvider>
 );
