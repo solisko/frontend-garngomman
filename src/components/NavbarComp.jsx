@@ -1,7 +1,11 @@
 import { Navbar } from "@solisko/components-garngomman";
+import { useContext } from "react";
 import { useNavigate } from "react-router";
+import { GarnContext } from "../context/GarnProvider";
 
 const NavbarComp = () => {
+  const { renderComponent, category } = useContext(GarnContext);
+
   const navigate = useNavigate();
 
   const handleNavClick = (button) => {
@@ -23,11 +27,17 @@ const NavbarComp = () => {
     }
   };
 
+  const handlePlusClick = () => {
+    if (category) {
+      renderComponent(category); // Rendera komponenten baserat på vald kategori
+    }
+  };
+
   return (
     <div
-    // style={{position: "fixed", bottom: "0"}}
+    style={{position: "fixed", bottom: "0"}}
     >
-      <Navbar handleClick={handleNavClick} />
+      <Navbar handleClick={handleNavClick} handlePlusClick={handlePlusClick} />
     </div>
   );
 };

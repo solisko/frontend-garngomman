@@ -2,17 +2,22 @@ import { createContext, useState } from "react";
 import yarnData from "../mockData/yarnData.json";
 import needleData from "../mockData/needleData.json";
 import accesoryData from "../mockData/accesoryData.json";
+import {
+  AdNewNeedleMobile,
+  AdNewYarnMobile,
+  AdNewAccesoryMobile,
+} from "@solisko/components-garngomman";
 
 export const GarnContext = createContext();
 
 const GarnProvider = (props) => {
   const [category, setCategory] = useState(null);
-  const [renderedComponent, setRenderedComponent] = useState(null);
   const [stashListData, setStashListData] = useState([
     ...yarnData,
     ...needleData,
     ...accesoryData,
   ]);
+  const [renderdComponent, setRenderdComponent] = useState(null);
 
   const categorySetter = (title) => {
     setCategory(title);
@@ -36,19 +41,20 @@ const GarnProvider = (props) => {
     }
   };
 
-  const renderComponent = (title) => {
-    switch (title) {
-      case "Garn":
-        setRenderedComponent(<Apple />);
+  const renderComponent = (category) => {
+    switch (category) {
+      case "Tillbehör":
+        setRenderdComponent(<AdNewAccesoryMobile />);
         break;
       case "Nålar":
-        setRenderedComponent(<Pear />);
+        setRenderdComponent(<AdNewNeedleMobile />);
         break;
-      case "Tillbehör":
-        setRenderedComponent(<Banana />);
+      case "Garn":
+        setRenderdComponent(<AdNewYarnMobile />);
         break;
       default:
-        setRenderedComponent(null);
+        setRenderdComponent(null);
+        break;
     }
   };
 
@@ -60,6 +66,8 @@ const GarnProvider = (props) => {
           category,
           handleTabClick,
           stashListData,
+          renderdComponent,
+          renderComponent,
         }}
       >
         {props.children}
