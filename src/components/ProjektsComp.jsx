@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import projektsData from "../mockData/projektsData.json";
-import TabsComp from "./TabsComp";
+import TabsComp from "../components/TabsComp";
 
 const ProjektsComp = () => {
   const navigate = useNavigate();
