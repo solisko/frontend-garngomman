@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "category": "yarn",
+        "img": "Bgarn_1.png",
+        "name": "Lova",
+        "weight": 90,
+        "length": 177,
+        "material": "bomull",
+        "description": "Färgstarkt och slitstarkt garn som passar både nybörjare och erfarna."
+    },
+    {
+        "id": 2,
+        "category": "yarn",
+        "img": "Bgarn_2.png",
+        "name": "Saga",
+        "weight": 287,
+        "length": 155,
+        "material": "bambu",
+        "description": "Färgstarkt och slitstarkt garn som passar både nybörjare och erfarna."
+    },
+    {
+        "id": 3,
+        "category": "yarn",
+        "img": "Bgarn_3.png",
+        "name": "Lova",
+        "weight": 294,
+        "length": 394,
+        "material": "bambu",
+        "description": "Mjukt och hållbart garn som passar perfekt för varma plagg."
+    },
+    {
+        "id": 4,
+        "category": "yarn",
+        "img": "Bgarn_4.png",
+        "name": "Saga",
+        "weight": 67,
+        "length": 351,
+        "material": "bambu",
+        "description": "Färgstarkt och slitstarkt garn som passar både nybörjare och erfarna."
+    },
+    {
+        "id": 5,
+        "category": "yarn",
+        "img": "Bgarn_5.png",
+        "name": "Ulla",
+        "weight": 95,
+        "length": 472,
+        "material": "ull",
+        "description": "Mjukt och hållbart garn som passar perfekt för varma plagg."
+    },
+    {
+        "id": 6,
+        "category": "yarn",
+        "img": "Bgarn_6.png",
+        "name": "Vera",
+        "weight": 100,
+        "length": 490,
+        "material": "akryl",
+        "description": "Färgstarkt och slitstarkt garn som passar både nybörjare och erfarna."
+    },
+    {
+        "id": 7,
+        "category": "yarn",
+        "img": "Bgarn_7.png",
+        "name": "Vera",
+        "weight": 104,
+        "length": 253,
+        "material": "ull",
+        "description": "Lyxigt och mjukt garn, perfekt för fina sjalar och halsdukar."
+    },
+    {
+        "id": 8,
+        "category": "yarn",
+        "img": "Bgarn_8.png",
+        "name": "Vera",
+        "weight": 100,
+        "length": 251,
+        "material": "akryl",
+        "description": "Mjukt och hållbart garn som passar perfekt för varma plagg."
+    },
+    {
+        "id": 9,
+        "category": "yarn",
+        "img": "Bgarn_9.png",
+        "name": "Freja",
+        "weight": 225,
+        "length": 449,
+        "material": "lin",
+        "description": "Miljövänligt och naturligt garn som ger en unik textur till alla projekt."
+    },
+    {
+        "id": 10,
+        "category": "yarn",
+        "img": "Bgarn_10.png",
+        "name": "Vera",
+        "weight": 212,
+        "length": 415,
+        "material": "akryl",
+        "description": "Mjukt och hållbart garn som passar perfekt för varma plagg."
+    }
+]
+

@@ -1,13 +1,8 @@
-.stashContainer{
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-}
-
-.stash{
-    background-color: aqua;
-}
 
 .stashTab {
-    background-color: blueviolet;
+    background-color: #FFF9ED;
+}
+
+.stashTab:hover{
+    background-color: #EAC665;
 }

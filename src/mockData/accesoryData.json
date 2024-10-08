@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "category": "accesory",
+        "img": "tillbehor_img_1.png",
+        "name": "accesory namn",
+        "beskrivning": "Hållbara markörer som hjälper dig att hålla koll på dina varv."
+    },
+    {
+        "id": 2,
+        "category": "accesory",
+        "img": "tillbehor_img_2.png",
+        "name": "accesory namn",
+        "beskrivning": "Mjuk och smidig kabel för rundstickning."
+    },
+    {
+        "id": 3,
+        "category": "accesory",
+        "img": "tillbehor_img_3.png",
+        "name": "accesory namn",
+        "beskrivning": "Mätverktyg för att kontrollera storleken på stickor och virknålar."
+    },
+    {
+        "id": 4,
+        "category": "accesory",
+        "img": "tillbehor_img_4.png",
+        "name": "accesory namn",
+        "beskrivning": "Mjuk och smidig kabel för rundstickning."
+    },
+    {
+        "id": 5,
+        "category": "accesory",
+        "img": "tillbehor_img_5.png",
+        "name": "accesory namn",
+        "beskrivning": "Hållbara markörer som hjälper dig att hålla koll på dina varv."
+    },
+    {
+        "id": 6,
+        "category": "accesory",
+        "img": "tillbehor_img_6.png",
+        "name": "accesory namn",
+        "beskrivning": "Hållbara markörer som hjälper dig att hålla koll på dina varv."
+    },
+    {
+        "id": 7,
+        "category": "accesory",
+        "img": "tillbehor_img_7.png",
+        "name": "accesory namn",
+        "beskrivning": "Praktiskt fodral för förvaring av virknålar och tillbehör."
+    },
+    {
+        "id": 8,
+        "category": "accesory",
+        "img": "tillbehor_img_8.png",
+        "name": "accesory namn",
+        "beskrivning": "Mätverktyg för att kontrollera storleken på stickor och virknålar."
+    },
+    {
+        "id": 9,
+        "category": "accesory",
+        "img": "tillbehor_img_9.png",
+        "name": "accesory namn",
+        "beskrivning": "Väskhållare som gör det enkelt att ta med dina projekt överallt."
+    },
+    {
+        "id": 10,
+        "category": "accesory",
+        "img": "tillbehor_img_10.png",
+        "name": "accesory namn",
+        "beskrivning": "Hållbara markörer som hjälper dig att hålla koll på dina varv."
+    }
+]
