@@ -3,7 +3,7 @@ import {
   StashList,
   YarnList,
   NeedleList,
-  AccesoryList,
+  // AccesoryList,
 } from "@solisko/components-garngomman";
 import styles from "../styles/Stash.module.css";
 import yarnData from "../mockData/yarnData.json";
