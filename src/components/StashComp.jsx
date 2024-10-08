@@ -42,7 +42,7 @@ const StashComp = () => {
   };
 
   return (
-    <div className={styles.stashContainer}>
+    <div>
       <Stash
         className={styles.stash}
         btnClassName={styles.stashTab}
@@ -51,6 +51,7 @@ const StashComp = () => {
         title3="Nålar"
         title4="Tillbehör"
         handleClick={handleTabClick}
+        stashContainerclassName={styles.stashConatiner}
       />
       <StashList stashList={stashList} />
     </div>
