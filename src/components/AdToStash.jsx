@@ -1,24 +1,19 @@
 import { useContext } from "react";
 import { GarnContext } from "../context/GarnProvider";
 import TabsComp from "./TabsComp";
-import { useNavigate } from "react-router";
 
 const AdToStash = () => {
-  const { renderdComponent } = useContext(GarnContext);
-
-  const navigate = useNavigate();
-
-  const handleTabClick = () => {
-    navigate("/stash");
-  };
+  const { renderdComponent, handleTabClick } = useContext(GarnContext);
 
   return (
-    <div>
+    <>
       <div>
-        <TabsComp handleTabClick={handleTabClick} />
+        <div>
+          <TabsComp handleTabClick={handleTabClick} />
+        </div>
+        {renderdComponent}
       </div>
-      {renderdComponent}
-    </div>
+    </>
   );
 };
 
