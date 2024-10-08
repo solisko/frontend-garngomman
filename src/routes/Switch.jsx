@@ -13,6 +13,7 @@ import {
 } from "@solisko/components-garngomman";
 import { Routes, Route } from "react-router";
 import StashComp from "../components/StashComp";
+import AdToStash from "../components/AdToStash";
 
 const Switch = () => {
   return (
@@ -29,7 +30,7 @@ const Switch = () => {
         <Route path="/profile/personsettings" element={<PersonSettings />} />
         <Route path="/profile/preferences" element={<Preferences />} />
         <Route path="/profile/support" element={<Support />} />
-        <Route path="/addtostash" />
+        <Route path="/addtostash" element={<AdToStash />} />
         <Route path="/project" />
         <Route path="/community" element={<Community />} />
         <Route path="/inspo" />
