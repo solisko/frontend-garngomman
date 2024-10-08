@@ -1,7 +1,4 @@
 import {
-  Start,
-  EmailLoginPage,
-  EmailPasswordPage,
   Community,
   Profil,
   Gdpr,
@@ -15,14 +12,17 @@ import { Routes, Route } from "react-router";
 import StashComp from "../components/StashComp";
 import AdToStash from "../components/AdToStash";
 import ProjektsComp from "../components/ProjektsComp";
+import StartComp from "../components/StartComp";
+import LoginComp from "../components/LoginComp";
+import PasswordComp from "../components/PasswordComp";
 
 const Switch = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Start />} />
-        <Route path="/login" element={<EmailLoginPage />} />
-        <Route path="/password" element={<EmailPasswordPage />} />
+        <Route path="/" element={<StartComp />} />
+        <Route path="/login" element={<LoginComp />} />
+        <Route path="/password" element={<PasswordComp/>} />
         <Route path="/stash" element={<StashComp />} />
         <Route path="/profile" element={<Profil />} />
         <Route path="/profile/gdpr" element={<Gdpr />} />
