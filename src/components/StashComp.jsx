@@ -6,6 +6,7 @@ import accesoryData from "../mockData/accesoryData.json";
 import { useContext, useState } from "react";
 import { GarnContext } from "../context/GarnProvider";
 import TabsComp from "./TabsComp";
+import AdToStash from "./AdToStash";
 
 const StashComp = () => {
   const { categorySetter, category } = useContext(GarnContext);
@@ -44,6 +45,7 @@ const StashComp = () => {
         stashList={stashListData}
         listWrapperClassName={styles.listWrapper}
       />
+      <AdToStash />
     </div>
   );
 };
