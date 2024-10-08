@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "category": "needle",
+        "img": "virknal_img_1.png",
+        "name": "hobbie",
+        "längd": 17,
+        "diameter": 2.5,
+        "beskrivning": "Lätt och bekväm virknål som är perfekt för långa projekt."
+    },
+    {
+        "id": 2,
+        "category": "needle",
+        "img": "virknal_img_2.png",
+        "name": "Anna-Maria",
+        "längd": 17,
+        "diameter": 5.5,
+        "beskrivning": "Perfekt för både tunna och tjocka garner, hållbar och stark."
+    },
+    {
+        "id": 3,
+        "category": "needle",
+        "img": "virknal_img_3.png",
+        "name": "hobbie",
+        "längd": 12,
+        "diameter": 3.5,
+        "beskrivning": "Högkvalitativ virknål med en jämn yta för enkel hantering."
+    },
+    {
+        "id": 4,
+        "category": "needle",
+        "img": "virknal_img_4.png",
+        "name": "Anna-Maria",
+        "längd": 14,
+        "diameter": 6.0,
+        "beskrivning": "Perfekt för både tunna och tjocka garner, hållbar och stark."
+    },
+    {
+        "id": 5,
+        "category": "needle",
+        "img": "virknal_img_5.png",
+        "name": "hobbie",
+        "längd": 12,
+        "diameter": 2.5,
+        "beskrivning": "En virknål med en skön greppvänlig yta för precision."
+    },
+    {
+        "id": 6,
+        "category": "needle",
+        "img": "virknal_img_6.png",
+        "name": "Anna-Maria",
+        "längd": 20,
+        "diameter": 5.0,
+        "beskrivning": "Perfekt för både tunna och tjocka garner, hållbar och stark."
+    },
+    {
+        "id": 7,
+        "category": "needle",
+        "img": "virknal_img_7.png",
+        "name": "hobbie",
+        "längd": 20,
+        "diameter": 4.5,
+        "beskrivning": "Perfekt för både tunna och tjocka garner, hållbar och stark."
+    },
+    {
+        "id": 8,
+        "category": "needle",
+        "img": "virknal_img_8.png",
+        "name": "Anna-Maria",
+        "längd": 16,
+        "diameter": 4.0,
+        "beskrivning": "Lätt och bekväm virknål som är perfekt för långa projekt."
+    },
+    {
+        "id": 9,
+        "category": "needle",
+        "img": "virknal_img_9.png",
+        "name": "hobbie",
+        "längd": 19,
+        "diameter": 2.0,
+        "beskrivning": "Perfekt för både tunna och tjocka garner, hållbar och stark."
+    },
+    {
+        "id": 10,
+        "category": "needle",
+        "img": "virknal_img_10.png",
+        "name": "Anna-Maria",
+        "längd": 13,
+        "diameter": 4.0,
+        "beskrivning": "Högkvalitativ virknål med en jämn yta för enkel hantering."
+    }
+]

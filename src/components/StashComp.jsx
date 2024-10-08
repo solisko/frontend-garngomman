@@ -1,5 +1,8 @@
 import { Stash, StashList } from "@solisko/components-garngomman";
 import styles from "../styles/Stash.module.css";
+import yarnData from "../mockData/yarnData.json";
+import needleData from "../mockData/needleData.json";
+import accesoryData from "../mockData/accesoryData.json";
 import { useContext } from "react";
 import { GarnContext } from "../context/GarnProvider";
 
@@ -7,6 +10,8 @@ const StashComp = () => {
   const { categorySetter, category } = useContext(GarnContext);
 
   const [renderedList, setRenderedList] = useState(null);
+
+  const stashList = [...yarnData, ...needleData, ...accesoryData];
 
   const renderList = (category) => {
     switch (category) {
@@ -37,6 +42,7 @@ const StashComp = () => {
         title3="Nålar"
         title4="Tillbehör"
       />
+      <StashList stasList={stashList} />
     </div>
   );
 };
