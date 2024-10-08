@@ -1,11 +1,17 @@
+import { useNavigate } from "react-router";
 import projektsData from "../mockData/projektsData.json";
 import TabsComp from "./TabsComp";
 
 const ProjektsComp = () => {
+  const navigate = useNavigate();
+
+  const handleTabClick = () => {
+    navigate("/stash");
+  };
   return (
     <div>
       <div>
-        <TabsComp />
+        <TabsComp handleTabClick={handleTabClick} />
       </div>
       {projektsData.length === 0 ? (
         <p>
