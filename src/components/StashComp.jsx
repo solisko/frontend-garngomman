@@ -17,7 +17,7 @@ const StashComp = () => {
         title3="Nålar"
         title4="Tillbehör"
       />
-      <StashList stasList={stashList} />
+      <StashList stashList={stashList} />
     </div>
   );
 };
