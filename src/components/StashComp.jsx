@@ -1,59 +1,49 @@
-import {
-  Stash,
-  StashList,
-  YarnList,
-  NeedleList,
-  // AccesoryList,
-} from "@solisko/components-garngomman";
+import { Stash, StashList } from "@solisko/components-garngomman";
 import styles from "../styles/Stash.module.css";
 import yarnData from "../mockData/yarnData.json";
 import needleData from "../mockData/needleData.json";
 import accesoryData from "../mockData/accesoryData.json";
 import { useContext, useState } from "react";
 import { GarnContext } from "../context/GarnProvider";
+import TabsComp from "./TabsComp";
 
 const StashComp = () => {
   const { categorySetter, category } = useContext(GarnContext);
-  const [renderedList, setRenderedList] = useState(null);
-  const stashList = [...yarnData, ...needleData, ...accesoryData];
+  const [stashListData, setStashListData] = useState([
+    ...yarnData,
+    ...needleData,
+    ...accesoryData,
+  ]);
 
   const handleTabClick = (category) => {
     categorySetter(category);
-    renderList(category);
-  };
 
-  const renderList = (category) => {
     switch (category) {
-      case "Stash":
-        setRenderedList(<StashList />);
-        break;
       case "Garn":
-        setRenderedList(<YarnList />);
+        setStashListData(yarnData);
         break;
       case "Nålar":
-        setRenderedList(<NeedleList />);
+        setStashListData(needleData);
         break;
       case "Tillbehör":
-        setRenderedList(<AccesoryList />);
+        setStashListData(accesoryData);
         break;
       default:
-        setRenderedList(null);
+        setStashListData([...yarnData, ...needleData, ...accesoryData]);
     }
   };
 
   return (
     <div>
+      <TabsComp handleTabClick={handleTabClick} />
       <Stash
         className={styles.stash}
-        btnClassName={styles.stashTab}
-        title1="Stash"
-        title2="Garn"
-        title3="Nålar"
-        title4="Tillbehör"
-        handleClick={handleTabClick}
         stashContainerclassName={styles.stashConatiner}
       />
-      <StashList stashList={stashList} />
+      <StashList
+        stashList={stashListData}
+        listWrapperClassName={styles.listWrapper}
+      />
     </div>
   );
 };
