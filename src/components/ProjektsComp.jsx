@@ -1,13 +1,11 @@
-import { useNavigate } from "react-router";
+import { useContext } from "react";
+import { GarnContext } from "../context/GarnProvider";
 import projektsData from "../mockData/projektsData.json";
 import TabsComp from "./TabsComp";
 
 const ProjektsComp = () => {
-  const navigate = useNavigate();
+  const { handleTabClick } = useContext(GarnContext);
 
-  const handleTabClick = () => {
-    navigate("/stash");
-  };
   return (
     <div>
       <div>
