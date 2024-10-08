@@ -23,7 +23,7 @@ const Switch = () => {
         <Route path="/login" element={<EmailLoginPage />} />
         <Route path="/password" element={<EmailPasswordPage />}/>
         <Route path="/stash" element={<StashComp />} />
-        <Route path="/Profile" element={<Profil />} />
+        <Route path="/profile" element={<Profil />} />
         <Route path="/profile/gdpr" element={<Gdpr />} />
         <Route path="/profile/accountsettings" element={<AccountSettings />} />
         <Route path="/profile/membership" element={<Membership />} />
