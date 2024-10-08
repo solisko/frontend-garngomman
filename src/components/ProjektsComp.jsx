@@ -1,8 +1,12 @@
 import projektsData from "../mockData/projektsData.json";
+import TabsComp from "./TabsComp";
 
 const ProjektsComp = () => {
   return (
     <div>
+      <div>
+        <TabsComp />
+      </div>
       {projektsData.length === 0 ? (
         <p>
           Du har inga påbörjade projekt! <br />
@@ -14,13 +18,14 @@ const ProjektsComp = () => {
           {projektsData.map((projekt, idx) => (
             <div
               style={{
-                height: "100px",
-                width: "100px",
+                minheight: "100px",
+                minWidth: "100px",
                 backgroundColor: "beige",
               }}
               key={idx}
             >
-              <p>{projekt.name}</p>
+              <h4>{projekt.name}</h4>
+              <p>{projekt.description}</p>
             </div>
           ))}
         </div>
