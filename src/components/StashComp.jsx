@@ -3,7 +3,6 @@ import styles from "../styles/Stash.module.css";
 import { useContext } from "react";
 import { GarnContext } from "../context/GarnProvider";
 import TabsComp from "./TabsComp";
-import AdToStash from "./AdToStash";
 
 const StashComp = () => {
   const { handleTabClick, stashListData } = useContext(GarnContext);
@@ -19,7 +18,6 @@ const StashComp = () => {
         stashList={stashListData}
         listWrapperClassName={styles.listWrapper}
       />
-      <AdToStash />
     </div>
   );
 };

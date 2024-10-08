@@ -29,14 +29,13 @@ const NavbarComp = () => {
 
   const handlePlusClick = () => {
     if (category) {
-      renderComponent(category); // Rendera komponenten baserat på vald kategori
+      navigate("/addtostash");
+      renderComponent(category);
     }
   };
 
   return (
-    <div
-    style={{position: "fixed", bottom: "0"}}
-    >
+    <div style={{ position: "fixed", bottom: "0" }}>
       <Navbar handleClick={handleNavClick} handlePlusClick={handlePlusClick} />
     </div>
   );

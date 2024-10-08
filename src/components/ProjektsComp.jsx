@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GarnContext } from "../context/GarnProvider";
 import projektsData from "../mockData/projektsData.json";
-import TabsComp from "./TabsComp";
+import TabsComp from "../components/TabsComp";
 
 const ProjektsComp = () => {
   const { handleTabClick } = useContext(GarnContext);
