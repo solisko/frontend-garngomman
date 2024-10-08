@@ -9,8 +9,8 @@ const NavbarComp = () => {
       case "Mina Projekt":
         navigate("/project");
         break;
-        case "Mönster":
-        navigate("/patterns");
+      case "Stash":
+        navigate("/stash");
         break;
       case "Community":
         navigate("/community");
@@ -24,8 +24,8 @@ const NavbarComp = () => {
   };
 
   return (
-    <div 
-      // style={{position: "fixed", bottom: "0"}}
+    <div
+    // style={{position: "fixed", bottom: "0"}}
     >
       <Navbar handleClick={handleNavClick} />
     </div>
