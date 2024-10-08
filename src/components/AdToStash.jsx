@@ -4,8 +4,11 @@ import {
   AdNewAccesoryMobile,
 } from "@solisko/components-garngomman";
 import { useState } from "react";
+import { GarnContext } from "../context/GarnProvider";
 
 const AdToStash = () => {
+  const { category } = useContext(GarnContext);
+
   const [renderdComponent, setRenderdComponent] = useState(null);
 
   const categorySetter = (title) => {
