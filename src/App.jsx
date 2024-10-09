@@ -33,6 +33,9 @@ function App() {
       <div onClick={handleHeaderClick}>
         <Header />
       </div>
+      <div>
+        hejsan
+      </div>
       <div className={styles.contentContainer}>
         <Switch />
       </div>
