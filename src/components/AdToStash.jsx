@@ -11,6 +11,15 @@ const AdToStash = () => {
   const adYarnHandler = () => {
     navigate("/stash");
   };
+  const adNewNeedleHandler = () => {
+    navigate("/stash");
+  };
+
+  // byt namn på denna till adNewAccesoryHandler,
+  // vet inte varför den heter loginHandler 🤷‍♂️
+  const loginHandler = () => {
+    navigate("/stash");
+  };
 
   return (
     <>
@@ -19,7 +28,11 @@ const AdToStash = () => {
           <TabsComp handleTabClick={handleTabClick} />
         </div>
         {renderdComponent &&
-          React.cloneElement(renderdComponent, { adYarnHandler })}
+          React.cloneElement(renderdComponent, {
+            adYarnHandler,
+            adNewNeedleHandler,
+            loginHandler,
+          })}
       </div>
     </>
   );
