@@ -3,13 +3,20 @@ import {
   AdNewNeedleMobile,
   AdNewYarnMobile,
 } from "@solisko/components-garngomman";
+import { useNavigate } from "react-router";
 
 const AllAdToStash = () => {
+  const navigate = useNavigate();
+
+  const navigateHandler = () => {
+    navigate("/stash");
+  };
+
   return (
     <>
-      <AdNewYarnMobile />
-      <AdNewNeedleMobile />
-      <AdNewAccesoryMobile />
+      <AdNewYarnMobile adYarnHandler={navigateHandler} />
+      <AdNewNeedleMobile adNewNeedleHandler={navigateHandler} />
+      <AdNewAccesoryMobile loginHandler={navigateHandler} />
     </>
   );
 };
