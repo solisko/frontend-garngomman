@@ -7,6 +7,7 @@ import {
   AdNewYarnMobile,
   AdNewAccesoryMobile,
 } from "@solisko/components-garngomman";
+import AllAdToStash from "../components/AllAdToStash";
 
 export const GarnContext = createContext();
 
@@ -51,6 +52,9 @@ const GarnProvider = (props) => {
         break;
       case "Garn":
         setRenderdComponent(<AdNewYarnMobile />);
+        break;
+      case "Stash":
+        setRenderdComponent(<AllAdToStash />);
         break;
       default:
         setRenderdComponent(null);
