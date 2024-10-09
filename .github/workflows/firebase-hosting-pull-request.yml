@@ -15,3 +15,5 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FRONTEND_GARNGOMMAN }}
           projectId: frontend-garngomman
+          channelId: 'preview'  # Add this line to specify the channel
+
