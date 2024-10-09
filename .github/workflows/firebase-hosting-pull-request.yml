@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         # Install necessary dependencies, om det behövs. Annars kan du hoppa över.
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: FirebaseExtended/action-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FRONTEND_GARNGOMMAN }}
