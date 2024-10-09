@@ -35,7 +35,13 @@ const NavbarComp = () => {
   };
 
   return (
-    <div style={{ position: "fixed", bottom: "0" }}>
+    <div
+      style={{
+        position: "fixed",
+        bottom: "0",
+        width: "450px",
+      }}
+    >
       <Navbar handleClick={handleNavClick} handlePlusClick={handlePlusClick} />
     </div>
   );
